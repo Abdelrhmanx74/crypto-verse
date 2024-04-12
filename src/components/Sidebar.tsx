@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const SideBar = () => {
     return (
-        <div className='lg:w-full h-screen min-w-[390px] lg:h-[95vh] lg:sticky lg:top-[2%] lg:rounded-2xl bg-black flex flex-col items-center justify-between gap-8 py-8 px-6 '>
+        <aside className='lg:w-full h-screen lg:h-[95vh] lg:sticky lg:top-[2%] lg:rounded-2xl bg-black flex flex-col items-center justify-between gap-8 py-8 px-6 '>
             <div className='flex w-full h-fit flex-col gap-8'>
                 <div className='w-full h-fit flex flex-col lg:flex-row items-center justify-center gap-4'>
                     <Avatar name='Crypto Verse' size={'sizeIcon110'} variant='user' src='/assets/logos/crypto-verse.svg' />
@@ -22,7 +22,7 @@ const SideBar = () => {
                 <Anchor variant='inverse' href='/' >privacy</Anchor>
                 <Anchor variant='inverse' href='/'>copy-rights</Anchor>
             </div>
-        </div>
+        </aside>
     )
 }
 

@@ -8,18 +8,18 @@ export default function LayoutProvider({
     children: React.ReactNode
 }) {
     return (
-        <Theme.Provider theme="light">
-            <div className=" h-full m-0 p-4">
+        <main className=" h-full m-0 p-4">
+            <Theme.Provider theme="default">
                 <div className="flex w-full h-full">
-                    <div className="flex-[0.2]">
+                    <div className="">
                         <Sidebar />
                     </div>
-                    <div className="flex-[0.8] p-8">
+                    <div className="p-8">
                         {children}
                     </div>
                 </div>
                 <Footer />
-            </div>
-        </Theme.Provider>
+            </Theme.Provider>
+        </main>
     )
 }
